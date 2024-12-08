@@ -23,7 +23,7 @@ for r in rotations:
 matches = 0
 for r in rotations:
     for line in r:
-        matches += len(re.findall(r'(?=(XMAS|SAMX))', line)) # overlapping matches
+        matches += len(re.findall(r'(?=(XMAS|SAMX))', line)) # (?=(...)) for overlapping matches
 
 print(matches)
 
